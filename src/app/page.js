@@ -26,7 +26,6 @@ export default function Home() {
 
     } catch (error) {
       console.log("Login failed",);
-      toast.error(error.message);
     }
   }
 
