@@ -13,8 +13,8 @@ export default function Home() {
 
 
   const [user, setUser] = React.useState({
-    username: "",
-    password: "",
+    username: " ",
+    password: " ",
 
   })
 
