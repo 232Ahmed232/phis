@@ -103,7 +103,7 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center w-full mt-4 p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
         <p className="text-sm">
-          Don't have an account?{' '}
+          Don't have an account?
           <a href="#" className="text-blue-500">
             Sign up
           </a>
