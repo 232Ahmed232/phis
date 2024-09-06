@@ -22,6 +22,8 @@ export default function Home() {
 
     try {
       const response = await axios.post("/api/users/login", user);
+      console.log("Login success", response.data);
+
     } catch (error) {
       console.log("Login failed",);
       toast.error(error.message);

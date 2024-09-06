@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 connect()
 
-export async function POST(request){
+export async function POST(request,response){
     try {
         const reqBody = await request.json()
         const {username, password} = reqBody;
@@ -18,14 +18,10 @@ export async function POST(request){
 
         const savedUser = await newUser.save()
         console.log(savedUser);
-        const response = NextResponse.json({
-            message: "Login successful",
-            success: true,
-        })
 
-        return response;
+        return NextResponse.json({message: "Login successful",  });
 
     } catch (error) {
-        
+        return  NextResponse.json({message: "Erooro",  });
     }
 }
